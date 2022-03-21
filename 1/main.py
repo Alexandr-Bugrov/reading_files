@@ -33,27 +33,4 @@ def sorting_writer(*files_names):
             written_file.write(f'{reader(get_key(writable_files, line))}\n')
 
 
-# def counter(*files_names):
-#     comparer_files = {}
-#     for file_name in files_names:
-#         with open(file_name, encoding='utf-8') as file:
-#             data = file.readlines()
-#             comparer_files[file_name] = data
-#     return comparer_files
-#
-# def sorting_writer(*files_names):
-#     min_text = ''
-#     min_lentext = 1
-#     min_name = ''
-#     writable_files = counter(*files_names)
-#     while writable_files != {}:
-#         writable_files = counter(*files_names)
-#         writable_files = list(len(writable_files.values()))
-#         with open('4.txt', 'a', encoding='utf-8') as written_file:
-#             written_file.write(f'{min_name}\n')
-#             written_file.write(f'{len(min_text)}\n')
-#             written_file.write(f'{min_text}\n')
-
-
-
 sorting_writer('1.txt', '2.txt', '3.txt')
